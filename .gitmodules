@@ -1,0 +1,3 @@
+[submodule "interfejs"]
+	path = interfejs
+	url = https://github.com/kamilekbeznosa/tennissix-court-manager
