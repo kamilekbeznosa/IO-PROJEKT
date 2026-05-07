@@ -1,0 +1,173 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>671</x><y>680</y><w>231</w><h>143</h></coordinates><panel_attributes>&lt;&lt;Abstract&gt;&gt;
+Użytkownik
+--
++id: guid
++imie: string
++nazwisko: string
++e_mail: string
++haslo(haszowane): string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>121</x><y>933</y><w>374</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+TechnikSprzetu
+--
++specjalizacja: string
+--
++PodejmijZlecenie(zlecenie: ZlecenieSerwisowe): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>891</x><y>867</y><w>385</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+OrganizatorTurnieju
+--
++UtwórzTurniej(nazwa: string,data: DateTime): Turniej
++GenerujDrabinke(turniej: Turniej): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>77</x><y>801</y><w>374</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Recepcjonista
+--
++stanowisko: string
+--
++WeryfikujKlienta(klient: Klient): bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>506</x><y>933</y><w>374</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Instruktor
+--
++stawka_godzinowa: decimal
+--
++ZatwierdzLekcje(lekcja: Lekcja): void
++AnulujLekcje(lekcja: Lekcja): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>682</x><y>1351</y><w>374</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Lekcja
+--
++instruktor: instruktor
++status: bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1551</x><y>1054</y><w>231</w><h>209</h></coordinates><panel_attributes>&lt;&lt;Abstract&gt;&gt;
+Rezerwacja
+--
++id_rezerwacji: guid
++data: DateTime
++czas_trwania_min: int
++kort: Kort
++sprzęt: List&lt;Sprzęt&gt;
++calkowity_koszt: decimal
++czy_oplacona: bool
+--
++Opłac(): void
++Anuluj(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1650</x><y>1318</y><w>407</w><h>143</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Kort
+--
++numer: int
++cena_za_h: decimal
++nawierzchnia: string
+--
++SprawdzDostepnosc(data: DateTime, godz: TimeSpan): bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1683</x><y>1252</y><w>187</w><h>88</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1
+przypisany do</panel_attributes><additional_attributes>10;10;150;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1441</x><y>1252</y><w>209</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>1045</x><y>1252</y><w>528</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>460;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>759</x><y>1032</y><w>143</w><h>341</h></coordinates><panel_attributes>lt=-&gt;
+m1=0..*
+m2=1
+prowadzona przez</panel_attributes><additional_attributes>10;290;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>275</x><y>691</y><w>418</w><h>132</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>360;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>638</x><y>812</y><w>121</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>418</x><y>790</y><w>275</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>230;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>812</y><w>55</w><h>77</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;30;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1111</x><y>1054</y><w>385</w><h>143</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ZlecenieSerwisowe
+--
++id_zlecenia: guid
++opis_usterki: string
++status: string
+--
++ZmienStatus(nowy_status: string): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1364</x><y>856</y><w>462</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Klient
+--
++nr_klienta: guid
+--
++ZarezerwujKort(kort: Kort, data: DateTime): RezerwacjaKortu
++ZapiszNaLekcje(instruktor: Instruktor, data: DateTime): Lekcja</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>891</x><y>757</y><w>671</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;590;90</additional_attributes></element><element><id>Relation</id><coordinates><x>1661</x><y>955</y><w>121</w><h>121</h></coordinates><panel_attributes>lt=-&gt;
+m1=0..*
+m2=1
+złożona przez</panel_attributes><additional_attributes>20;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1441</x><y>955</y><w>132</w><h>121</h></coordinates><panel_attributes>lt=-&gt;
+m1=0..*
+m2=1
+zgłoszone przez</panel_attributes><additional_attributes>10;90;20;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1397</x><y>614</y><w>484</w><h>132</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+BazaRezerwacji
+--
++rezerwacje: List&lt;Rezerwacja&gt;
+--
++Dodaj(rezerwacja: Rezerwacja): void
++PobierzDostepneKorty(data: DateTime, godzina: TimeSpan): List&lt;Kort&gt;
++Usun(rezerwacja: Rezerwacja): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>781</x><y>482</y><w>330</w><h>132</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+BazaUzytkownikow
+--
++użytkownicy: List&lt;Użytkownik&gt;
+--
++Dodaj(uzytkownik: Użytkownik): void
++Pobierz(e_mail: string): Użytkownik
++Usun(uzytkownik: Użytkownik): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1672</x><y>735</y><w>308</w><h>429</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+
+m2=0..*
+zawiera</panel_attributes><additional_attributes>10;10;10;80;220;80;220;360;100;360</additional_attributes></element><element><id>Relation</id><coordinates><x>814</x><y>603</y><w>132</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+
+m2=0..*
+zawiera</panel_attributes><additional_attributes>100;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1441</x><y>130</y><w>231</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Abstract&gt;&gt;
+Okno
+--
++Wyświetl(obiekt: Object): void
++Zamknij(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1034</x><y>273</y><w>363</w><h>132</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+OknoLogowania
+--
++e_mail: string
++haslo: string
+--
++WprowadzDane(email: string, haslo: string): void
++Zaloguj(): Uzytkownik</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1254</x><y>207</y><w>264</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>220;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>825</x><y>1054</y><w>275</w><h>121</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Turniej
+--
++nazwa: string
++data_rozpoczecia: DateTime
++Lista_uczestnikow: List&lt;Klient&gt;
+--
++DodajUczestnika(klient: Klient): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>968</x><y>944</y><w>154</w><h>132</h></coordinates><panel_attributes>lt=-&gt;
+m1=0..*
+m2=1
+organizowany przez
+</panel_attributes><additional_attributes>20;100;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>273</y><w>231</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+SystemPlatnosci
+--
++nazwa_bramki: string
++autoryzacja_token: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>394</y><w>231</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Interafce&gt;&gt;
+IObslugaPlatnosci
+--
++PrzetwarzajPlatnosc(kwota: decimal): bool
++ZlecZwrot(kwota: decimal): bool</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>528</x><y>273</y><w>231</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+SystemPowiadomien
+--
++serwer_smtp: string
++klucz_api: string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>528</x><y>394</y><w>231</w><h>88</h></coordinates><panel_attributes>&lt;&lt;Interafce&gt;&gt;
+IPowiadomienia
+--
++WyslijEmail(adres: string, tresc: string): void
++WyslijSMS(numer: string, tresc: string): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1386</x><y>1351</y><w>143</w><h>66</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+RezerwacjaKortu
+--
++kort: Kort</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>275</x><y>1010</y><w>946</w><h>275</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=0..*
+realizowane przez</panel_attributes><additional_attributes>10;10;90;150;370;230;640;220;840;170</additional_attributes></element><element><id>Relation</id><coordinates><x>363</x><y>350</y><w>33</w><h>66</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>350</y><w>33</w><h>66</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1056</x><y>383</y><w>176</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;-
+sprawdzane przez</panel_attributes><additional_attributes>10;90;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1562</x><y>526</y><w>143</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-
+zapisywane przez</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1540</x><y>196</y><w>55</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;30;140</additional_attributes></element><element><id>Relation</id><coordinates><x>253</x><y>999</y><w>99</w><h>319</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2= 0..*
+wydawany 
+przez
+
+</panel_attributes><additional_attributes>10;10;10;270</additional_attributes></element><element><id>UMLClass</id><coordinates><x>165</x><y>1296</y><w>231</w><h>121</h></coordinates><panel_attributes>&lt;&lt;Abstract&gt;&gt;
+Sprzet
+--
++id_sprzętu: guid
++nazwa: string
++marka: string
++cenza_za_h: decimal
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>33</x><y>1549</y><w>231</w><h>55</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+Rakieta
++kolor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>275</x><y>1549</y><w>231</w><h>55</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+ZestawPiłek
++ilość</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>165</x><y>1406</y><w>88</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>308</x><y>1406</y><w>66</w><h>165</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;40;130</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>1186</y><w>1738</w><h>440</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=0..*
+wypożyczany w ramach
+</panel_attributes><additional_attributes>1270;10;1560;10;1560;370;220;370;220;190;10;190</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1408</x><y>350</y><w>363</w><h>187</h></coordinates><panel_attributes>&lt;&lt;Class&gt;&gt;
+OknoRezerwacji
+--
++wybrany_kort: Kort
++wybrana_termin: DateTime
++wybrany_sprzęt: List&lt;Sprzęt&gt;
+--
++WybierzTemin(data: DateTime): void
++WybierzKort(kort: Kort):void
++DodajSprzęt(sprzet; Sprzet): void
++WygenerujPodsumowanie(): void
++PotwierdzRezerwacji(): Rezerwacja</panel_attributes><additional_attributes></additional_attributes></element></diagram>
