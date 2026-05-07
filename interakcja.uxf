@@ -4,7 +4,7 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>472</x>
+      <x>480</x>
       <y>136</y>
       <w>168</w>
       <h>24</h>
@@ -15,7 +15,7 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>272</x>
+      <x>280</x>
       <y>80</y>
       <w>96</w>
       <h>88</h>
@@ -26,7 +26,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>312</x>
+      <x>320</x>
       <y>160</y>
       <w>24</w>
       <h>64</h>
@@ -37,7 +37,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>544</x>
+      <x>552</x>
       <y>152</y>
       <w>24</w>
       <h>144</h>
@@ -48,10 +48,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>304</x>
+      <x>312</x>
       <y>208</y>
       <w>32</w>
-      <h>376</h>
+      <h>432</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -60,7 +60,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>536</x>
+      <x>544</x>
       <y>280</y>
       <w>32</w>
       <h>72</h>
@@ -72,7 +72,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>328</x>
+      <x>336</x>
       <y>264</y>
       <w>224</w>
       <h>32</h>
@@ -84,10 +84,10 @@ ZmienStatus("W realizacji")</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>536</x>
+      <x>544</x>
       <y>424</y>
       <w>32</w>
-      <h>152</h>
+      <h>216</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -96,7 +96,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>328</x>
+      <x>336</x>
       <y>408</y>
       <w>224</w>
       <h>32</h>
@@ -108,7 +108,7 @@ ZmienStatus("Gotowe")</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>544</x>
+      <x>552</x>
       <y>344</y>
       <w>24</w>
       <h>96</h>
@@ -119,9 +119,9 @@ ZmienStatus("Gotowe")</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>664</x>
+      <x>672</x>
       <y>136</y>
-      <w>168</w>
+      <w>192</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>Komunikacja:SystemPowiadomien
@@ -131,21 +131,21 @@ ZmienStatus("Gotowe")</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
+      <x>752</x>
       <y>152</y>
       <w>24</w>
-      <h>352</h>
+      <h>360</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;430.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>736</x>
-      <y>488</y>
+      <x>744</x>
+      <y>496</y>
       <w>32</w>
-      <h>72</h>
+      <h>24</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -154,7 +154,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
+      <x>568</x>
       <y>480</y>
       <w>192</w>
       <h>48</h>
@@ -168,7 +168,7 @@ gotowy do odbioru")</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
+      <x>568</x>
       <y>520</y>
       <w>192</w>
       <h>48</h>
@@ -178,5 +178,64 @@ WyslijEmail(adres,
 "Twój sprzęt jest
 gotowy do odbioru")</panel_attributes>
     <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>336</x>
+      <y>240</y>
+      <w>16</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>216</y>
+      <w>232</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+PodejmijZlecenie(zlecenie)</panel_attributes>
+    <additional_attributes>20.0;30.0;100.0;30.0;100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>744</x>
+      <y>536</y>
+      <w>32</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>752</x>
+      <y>552</y>
+      <w>24</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>752</x>
+      <y>512</y>
+      <w>24</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
   </element>
 </diagram>
