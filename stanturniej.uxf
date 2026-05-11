@@ -5,7 +5,7 @@
     <id>UMLSpecialState</id>
     <coordinates>
       <x>350</x>
-      <y>50</y>
+      <y>30</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -16,7 +16,7 @@
     <id>Relation</id>
     <coordinates>
       <x>350</x>
-      <y>60</y>
+      <y>40</y>
       <w>120</w>
       <h>120</h>
     </coordinates>
@@ -28,7 +28,7 @@ UtworzTurniej()</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>270</x>
-      <y>160</y>
+      <y>140</y>
       <w>190</w>
       <h>50</h>
     </coordinates>
@@ -43,7 +43,7 @@ valign=top
     <id>Relation</id>
     <coordinates>
       <x>450</x>
-      <y>160</y>
+      <y>140</y>
       <w>320</w>
       <h>60</h>
     </coordinates>
@@ -55,7 +55,7 @@ DodajUczestnika()[sa_walne_miejsca]</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>600</x>
-      <y>370</y>
+      <y>350</y>
       <w>140</w>
       <h>90</h>
     </coordinates>
@@ -67,7 +67,7 @@ UtworzDrabinke()</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>560</x>
-      <y>440</y>
+      <y>420</y>
       <w>130</w>
       <h>40</h>
     </coordinates>
@@ -78,7 +78,7 @@ UtworzDrabinke()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>600</x>
-      <y>470</y>
+      <y>450</y>
       <w>180</w>
       <h>100</h>
     </coordinates>
@@ -90,7 +90,7 @@ When(data_rozpoczecia)</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>360</x>
-      <y>730</y>
+      <y>710</y>
       <w>130</w>
       <h>40</h>
     </coordinates>
@@ -101,7 +101,7 @@ When(data_rozpoczecia)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>360</x>
-      <y>760</y>
+      <y>740</y>
       <w>220</w>
       <h>90</h>
     </coordinates>
@@ -113,7 +113,7 @@ ZmienStatus(zakonczony)</panel_attributes>
     <id>UMLSpecialState</id>
     <coordinates>
       <x>360</x>
-      <y>830</y>
+      <y>810</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -124,7 +124,7 @@ ZmienStatus(zakonczony)</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>320</x>
-      <y>240</y>
+      <y>220</y>
       <w>90</w>
       <h>40</h>
     </coordinates>
@@ -135,7 +135,7 @@ ZmienStatus(zakonczony)</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>190</x>
-      <y>350</y>
+      <y>330</y>
       <w>90</w>
       <h>40</h>
     </coordinates>
@@ -146,7 +146,7 @@ ZmienStatus(zakonczony)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>210</x>
-      <y>270</y>
+      <y>250</y>
       <w>160</w>
       <h>100</h>
     </coordinates>
@@ -158,7 +158,7 @@ ZmienStatus(zakonczony)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>380</x>
-      <y>270</y>
+      <y>250</y>
       <w>250</w>
       <h>90</h>
     </coordinates>
@@ -170,7 +170,7 @@ ZmienStatus(zakonczony)</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>560</x>
-      <y>340</y>
+      <y>320</y>
       <w>120</w>
       <h>40</h>
     </coordinates>
@@ -182,54 +182,32 @@ drabinke</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>530</x>
-      <y>550</y>
+      <y>530</y>
       <w>180</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>oczekiwanie na mecze</panel_attributes>
+    <panel_attributes>oczekuje na mecze</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>380</x>
-      <y>640</y>
-      <w>130</w>
-      <h>40</h>
+      <x>500</x>
+      <y>580</y>
+      <w>250</w>
+      <h>70</h>
     </coordinates>
-    <panel_attributes>Wprowadzanie
-Wynikow</panel_attributes>
+    <panel_attributes>W trakcie 
+rozgrywek
+-
+do/ fizyczna_realizacja_meczy</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
-      <y>580</y>
-      <w>140</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-WprowadzWynik()</panel_attributes>
-    <additional_attributes>110.0;10.0;110.0;40.0;10.0;40.0;10.0;60.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>500</x>
-      <y>580</y>
-      <w>200</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;
-[sa_kolejne_mecze]</panel_attributes>
-    <additional_attributes>10.0;80.0;150.0;70.0;180.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
       <x>360</x>
-      <y>200</y>
+      <y>180</y>
       <w>210</w>
       <h>60</h>
     </coordinates>
@@ -240,24 +218,35 @@ when(termin_zapisow_minal)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
-      <y>670</y>
-      <w>340</w>
-      <h>80</h>
+      <x>360</x>
+      <y>640</y>
+      <w>300</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 [Final_Rozegrany]ZmienStatus("Zakonczony")</panel_attributes>
-    <additional_attributes>50.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>220.0;10.0;70.0;70.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>230</x>
-      <y>380</y>
+      <y>360</y>
       <w>150</w>
       <h>480</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;20.0;230.0;130.0;460.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>560</y>
+      <w>30</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>

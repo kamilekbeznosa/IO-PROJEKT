@@ -152,15 +152,16 @@ Serwer aplikacji(docker/kubernetes)</panel_attributes>
       <w>280</w>
       <h>77</h>
     </coordinates>
-    <panel_attributes>BackendTENNISIX API</panel_attributes>
+    <panel_attributes>&lt;&lt;exe&gt;&gt;
+BackendTENNISIX API</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>721</x>
-      <y>455</y>
-      <w>133</w>
+      <x>854</x>
+      <y>476</y>
+      <w>126</w>
       <h>28</h>
     </coordinates>
     <panel_attributes>symbol=artifact
@@ -170,8 +171,8 @@ Moduł użytkowników</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>721</x>
-      <y>490</y>
+      <x>714</x>
+      <y>476</y>
       <w>133</w>
       <h>28</h>
     </coordinates>
@@ -187,7 +188,9 @@ Moduł rezerwacji</panel_attributes>
       <w>98</w>
       <h>56</h>
     </coordinates>
-    <panel_attributes>symbol=component
+    <panel_attributes>&lt;&lt;DB&gt;&gt;
+symbol=component
+
 TENNISIX DB</panel_attributes>
     <additional_attributes/>
   </element>
@@ -382,25 +385,13 @@ IpanelRecepcji</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>728</x>
-      <y>511</y>
-      <w>63</w>
-      <h>77</h>
-    </coordinates>
-    <panel_attributes>lt=.()
-IIntegracja</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
       <x>294</x>
       <y>511</y>
       <w>336</w>
       <h>49</h>
     </coordinates>
     <panel_attributes>lt=.&gt;&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;40.0;450.0;50.0;460.0;10.0</additional_attributes>
+    <additional_attributes>10.0;40.0;460.0;50.0;460.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
